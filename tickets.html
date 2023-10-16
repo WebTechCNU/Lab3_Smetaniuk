@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets - Car Exhibition</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caladea:100,300,400">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class="container">
+      <nav class="nav">
+        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <li><div class="dropdown"><a class="announcements-nav"href="announcements.html"><a>Exhibits</a><i class="fa fa-caret-down"></i>
+            <div class="dropdown-content">
+              <a href="exhibits.html#Luxury">Luxury</a>
+              <a href="exhibits.html#Classic">Classic</a>
+              <a href="exhibits.html#Sports">Sports</a>
+          </div></li>
+            <a href="tickets.html"><li>Tickets</li></a>
+        </ul>  
+    </nav> 
+    </header>
+
+<main class="container main-body">
+    <h1>Get Your Tickets to the Car Exhibition!</h1>
+    <div class="col-2-3 tickets-description">
+        <h2>Purchase Exhibition Tickets</h2>
+        <h3>Prices Start From $20</h3>
+        <p>Secure your tickets to the most exciting car exhibition of the year using the form to the right. You can purchase multiple tickets in a single order. After completing your order, you will receive a confirmation and e-tickets for the event. See you there!</p>
+        
+        <h3>Why Choose Us?</h3>
+
+        <ul class="why-choose-us">
+          <li>Explore the latest car models</li>
+          <li>Interactive exhibits and activities</li>
+          <li>Access to industry experts</li>
+        </ul>
+    </div><!--
+    --><div class="col-1-3">
+        <form class="tickets-description" action="#" method="post">
+
+            <fieldset>
+              <label>
+                First Name
+                <input type="text" name="name" placeholder="First name" required>
+                </label>
+              <label>
+                Last Name
+                <input type="text" name="surname" placeholder="Last name" required>
+              </label>
+  
+              <label>
+                Email
+                <input type="email" name="email" placeholder="Email address" required>
+              </label>
+  
+              <label>
+                Number of Tickets
+                <select name="quantity" required>
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </label>
+  
+            </fieldset>
+  
+            <input class="tickets-btn" type="submit" name="submit" value="Purchase">
+  
+          </form>
+    </div>
+
+    <div id="back-to-top" onclick="scrollToTop(1000);">
+      <img src="assets/img/arrow_up.png" alt="Go to top">
+  </div>
+  
+  
+  <script src="scripts/script.js"></script>
+</main>
+
+
+<footer class="container foot-container">
+  <p class="copyright">&copy; 2023 - AutoFest</p>
+  <nav class="footer-nav">
+      <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href="exhibits.html"><li>Exhibits</li></a>
+          <a href="tickets.html"><li>Tickets</li></a>
+      </ul>        
+  </nav>
+</footer>
+</body>
+</html>
